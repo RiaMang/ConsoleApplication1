@@ -13,7 +13,11 @@ namespace ConsoleApplication1
             Square a = new Square();
             a.side = 5;
             a.Color = "Red";
-            Console.WriteLine("The area of the {0} sqaure is: {1}", a.Color, a.CalcArea(t=>t * t).ToString());
+            Square b = a;
+            b.Color = "Pink";
+            Console.WriteLine("The area of the {0} sqaure is: {1}", a.Color,
+                a.CalcArea());
+                //a.CalcArea(t=>t * t).ToString());
             Console.ReadKey();
 
             Circle c = new Circle();
@@ -25,7 +29,12 @@ namespace ConsoleApplication1
             Shape s = new Square();
             Console.WriteLine("The area of the shape is: {0}", s.CalcArea().ToString());
             Console.ReadKey();
-
+            String strval = "Hello World";
+            String strval2 = strval;
+            strval = "Hello Austria";
+            Console.WriteLine(strval2);
+            Console.ReadKey();
+           
         }
     }
 }

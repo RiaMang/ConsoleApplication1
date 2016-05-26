@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    abstract class Shape : IShape
+   abstract class Shape : IShape
     {
         public string Color { get; set; }
 
         public abstract int CalcArea();
-    
+       
     }
 }
